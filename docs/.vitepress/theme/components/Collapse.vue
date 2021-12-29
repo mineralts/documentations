@@ -19,7 +19,7 @@
 
 <script setup lang='ts'>
 import { ref } from 'vue'
-const state = ref(false)
+const state = ref(true)
 
 function toggle () {
   state.value = !state.value
