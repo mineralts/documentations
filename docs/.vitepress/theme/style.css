@@ -1,0 +1,33 @@
+html, body {
+  scroll-behavior: smooth;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 1.5rem 4rem;
+  max-width: 80rem !important;
+}
+
+.container ul {
+  padding-left: 0;
+}
+
+.container ul > li {
+  list-style: none;
+  font-size: 20px;
+}
+
+.container ul > li > ul > li {
+  list-style: none;
+  padding-left: 20px;
+  font-size: 16px;
+}
+
+h3 {
+  padding-top: 24px;
+  color: #0089B6 !important;
+}
+
+.custom-block {
+  border-radius: 4px;
+}
