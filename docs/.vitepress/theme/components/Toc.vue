@@ -49,16 +49,19 @@ const [propertiesKey, methodsKey] = page.value.headers.filter((item) => {
   return item.level == 2
 })
 
-const propertyIndex = page.value.headers.indexOf(propertiesKey)
-const methodIndex = page.value.headers.indexOf(methodsKey)
+const toc = page.value.headers.slice()
+
+const propertyIndex = toc.indexOf(propertiesKey)
+const methodIndex = toc.indexOf(methodsKey)
+
 
 const properties = propertiesKey
-  ? page.value.headers.slice(propertyIndex + 1, methodIndex)
+  ? toc.slice(propertyIndex + 1, methodsKey ? methodIndex : toc.length )
   : undefined
 
 const methods = propertiesKey
   ? methodsKey
-    ? page.value.headers.slice(methodIndex + 1)
+    ? toc.slice(methodIndex + 1)
     : undefined
   : undefined
 
