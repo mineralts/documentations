@@ -1,6 +1,6 @@
 <template>
   <div class="toc">
-    <div class="table-of-contents">
+    <div v-if="properties" class="table-of-contents">
       <ul>
         <li>
           <a href="#properties">Properties</a>
@@ -12,7 +12,7 @@
         </li>
       </ul>
     </div>
-    <div class="table-of-contents">
+    <div v-if="methods" class="table-of-contents">
       <ul>
         <li>
           <a href="#methods">Methods</a>
@@ -35,8 +35,18 @@ const [propertiesKey, methodsKey] = page.value.headers.filter((item) => {
   return item.level == 2
 })
 
-const properties = page.value.headers.slice(page.value.headers.indexOf(propertiesKey) + 1, page.value.headers.indexOf(methodsKey))
-const methods = page.value.headers.slice(page.value.headers.indexOf(methodsKey) + 1)
+const propertyIndex = page.value.headers.indexOf(propertiesKey)
+const methodIndex = page.value.headers.indexOf(methodsKey)
+
+const properties = propertiesKey
+  ? page.value.headers.slice(propertyIndex + 1, methodIndex)
+  : undefined
+
+const methods = propertiesKey
+  ? methodsKey
+    ? page.value.headers.slice(methodIndex + 1)
+    : undefined
+  : undefined
 
 </script>
 
