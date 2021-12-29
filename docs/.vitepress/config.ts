@@ -19,8 +19,6 @@ export default {
     ],
 
     sidebar: {
-      '/docs/v1/api/': getGuideSidebar(),
-      '/config/': getConfigSidebar(),
       '/': getGuideSidebar()
     }
   }
@@ -29,27 +27,17 @@ export default {
 function getGuideSidebar() {
   return [
     {
+      text: 'Introduction',
+      children: [
+        { text: 'Get started', link: '/docs/v1/getting-started' },
+      ]
+    },
+    {
       text: 'API',
       children: [
-        { text: 'Guild', link: '/docs/v1/api/guild/' },
+        { text: 'Guild', link: '/docs/v1/api/guild' },
+        { text: 'User', link: '/docs/v1/api/user' },
       ]
     },
-  ]
-}
-
-function getConfigSidebar() {
-  return [
-    {
-      text: 'App Config',
-      children: [{ text: 'Basics', link: '/config/basics' }]
-    },
-    {
-      text: 'Theme Config',
-      children: [
-        { text: 'Homepage', link: '/config/homepage' },
-        { text: 'Algolia Search', link: '/config/algolia-search' },
-        { text: 'Carbon Ads', link: '/config/carbon-ads' }
-      ]
-    }
   ]
 }
