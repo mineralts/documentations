@@ -5,12 +5,12 @@
         <li>
           <Collapse>
             <template v-slot:label>
-              <a href="#properties">Properties</a>
+              <a class="heading" href="#properties">Properties</a>
             </template>
             <template v-slot:body>
               <ul>
-                <li v-for="(property, key) in properties">
-                  <a :href="`#${property.slug}`">{{ property.title }}</a>
+                <li v-for="(property, key) in properties" :key="key">
+                  <a :href="`#${property.slug}`">{{ property.title.replace('.', '') }}</a>
                 </li>
               </ul>
             </template>
@@ -23,12 +23,12 @@
         <li>
           <Collapse>
             <template v-slot:label>
-              <a href="#methods">Methods</a>
+              <a class="heading" href="#methods">Methods</a>
             </template>
             <template v-slot:body>
               <ul>
-                <li v-for="(method, key) in methods">
-                  <a :href="`#${method.slug}`">{{ method.title }}</a>
+                <li v-for="(method, key) in methods" :key="key">
+                  <a :href="`#${method.slug}`">{{ method.title.replace('.', '') }}</a>
                 </li>
               </ul>
             </template>
@@ -65,6 +65,10 @@ const methods = propertiesKey
 </script>
 
 <style scoped>
+.toc .heading {
+  font-weight: 500;
+}
+
 @media screen and (min-width: 1024px) {
   .toc {
     display: flex;
