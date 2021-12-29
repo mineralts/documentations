@@ -1,3 +1,7 @@
+:root {
+  --c-brand: #0089B6;
+}
+
 html, body {
   scroll-behavior: smooth;
 }
@@ -6,6 +10,12 @@ html, body {
   margin: 0 auto;
   padding: 0 1.5rem 4rem;
   max-width: 80rem !important;
+}
+
+@media screen and (min-width: 1024px) {
+  .container div[class^=language] {
+    width: 50%;
+  }
 }
 
 .container ul {
@@ -17,17 +27,63 @@ html, body {
   font-size: 20px;
 }
 
-.container ul > li > ul > li {
+.container ul > li ul > li {
   list-style: none;
   padding-left: 20px;
   font-size: 16px;
 }
 
-h3 {
-  padding-top: 24px;
+.container h2 {
+  padding-top: 2rem;
+}
+
+.container h3 {
+  padding-top: 2rem;
   color: #0089B6 !important;
+}
+
+.container table {
+  table-layout: auto;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+@media screen and (min-width: 1024px) {
+  .container table {
+    width: 75%;
+  }
+}
+
+
+.container table thead {
+  background: #0089B6 !important;
+  text-transform: capitalize;
+  color: white;
+}
+
+.container table thead tr th {
+  border-color: #0089B6 !important;
+  text-align: start;
+}
+
+.container table thead tr th {
+  min-width: 180px;
+  width: 100%;
+  border-color: #0089B6 !important
+}
+
+.container table td {
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 
 .custom-block {
   border-radius: 4px;
+}
+
+@media screen and (min-width: 1024px) {
+  .custom-block {
+    width: 75%;
+  }
 }
