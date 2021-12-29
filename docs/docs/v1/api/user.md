@@ -89,3 +89,4 @@ Return user banner url.
 | dynamic     | boolean  |    ✔     | New guild description |
 
 **Returns :** `Promise<string | null>`
+
