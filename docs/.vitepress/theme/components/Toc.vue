@@ -3,24 +3,36 @@
     <div v-if="properties" class="table-of-contents">
       <ul>
         <li>
-          <a href="#properties">Properties</a>
-          <ul>
-            <li v-for="(property, key) in properties">
-              <a :href="`#${property.slug}`">{{ property.title }}</a>
-            </li>
-          </ul>
+          <Collapse>
+            <template v-slot:label>
+              <a href="#properties">Properties</a>
+            </template>
+            <template v-slot:body>
+              <ul>
+                <li v-for="(property, key) in properties">
+                  <a :href="`#${property.slug}`">{{ property.title }}</a>
+                </li>
+              </ul>
+            </template>
+          </Collapse>
         </li>
       </ul>
     </div>
     <div v-if="methods" class="table-of-contents">
       <ul>
         <li>
-          <a href="#methods">Methods</a>
-          <ul>
-            <li v-for="(method, key) in methods">
-              <a :href="`#${method.slug}`">{{ method.title }}</a>
-            </li>
-          </ul>
+          <Collapse>
+            <template v-slot:label>
+              <a href="#methods">Methods</a>
+            </template>
+            <template v-slot:body>
+              <ul>
+                <li v-for="(method, key) in methods">
+                  <a :href="`#${method.slug}`">{{ method.title }}</a>
+                </li>
+              </ul>
+            </template>
+          </Collapse>
         </li>
       </ul>
     </div>
@@ -29,6 +41,8 @@
 
 <script setup lang='ts'>
 import { useData } from 'vitepress'
+import Collapse from './Collapse.vue'
+
 const { page } = useData()
 
 const [propertiesKey, methodsKey] = page.value.headers.filter((item) => {
