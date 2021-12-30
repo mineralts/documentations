@@ -383,13 +383,13 @@ If you want to use `.gif` file, your discord server must have the `ANIMATED_ICON
 
 
 ### .removeIcon()
-Remove guild's icon.
+Remove guild icon's.
 
 **Returns :** `Promise<void>`
 
 
 ### .setOwner(member)
-Change guild's owner.
+Change guild owner's.
 
 | Parameter | Type    | Optional | Description |
 | --------- | ------- | -------- | ----------- |
@@ -410,7 +410,7 @@ await guild.setOwner(guildMember)
 ```
 
 ### .setSplash(path)
-Define guild's splash overlay.
+Define guild splash overlay's.
 
 | Parameter | Type    | Optional | Description |
 | --------- | ------- | -------- | ----------- |
@@ -438,7 +438,7 @@ The discord server must have the `DISCOVERABLE` feature.
 
 
 ### .setBanner(path)
-Define guild's splash overlay.
+Define guild splash overlay's.
 
 | Parameter | Type    | Optional | Description |
 | --------- | ------- | -------- | ----------- |
