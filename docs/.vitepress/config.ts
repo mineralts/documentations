@@ -35,6 +35,7 @@ function getGuideSidebar() {
     {
       text: 'API',
       children: [
+        { text: 'Client', link: '/docs/v1/api/client' },
         { text: 'Guild', link: '/docs/v1/api/guild' },
         { text: 'User', link: '/docs/v1/api/user' },
       ]
