@@ -37,6 +37,7 @@ function getGuideSidebar() {
       children: [
         { text: 'Guild', link: '/docs/v1/api/guild' },
         { text: 'User', link: '/docs/v1/api/user' },
+        { text: 'Message', link: '/docs/v1/api/message' },
       ]
     },
   ]
