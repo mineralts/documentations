@@ -38,6 +38,9 @@ function getGuideSidebar() {
         { text: 'Guild', link: '/docs/v1/api/guild' },
         { text: 'User', link: '/docs/v1/api/user' },
         { text: 'Message', link: '/docs/v1/api/message' },
+        { text: 'Role', link: '/docs/v1/api/roles' },
+        { text: 'Emoji', link: '/docs/v1/api/emoji' },
+        { text: 'Activity', link: '/docs/v1/api/activity' },
       ]
     },
   ]
