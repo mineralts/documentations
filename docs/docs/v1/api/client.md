@@ -4,6 +4,10 @@ Represents your bot on Discord server.
 
 ## Properties
 
+### .guilds
+Represents all the discord servers on which the bot is present.
+**Type: GuildManager**
+
 ### .token
 Your token's bot. 
 
