@@ -33,12 +33,30 @@ function getGuideSidebar() {
       ]
     },
     {
-      text: 'API',
+      text: 'API - Classes',
       children: [
+        { text: 'Activity', link: '/docs/v1/api/activity/activity' },
+        { text: 'BaseButton', link: '/docs/v1/api/button/basebutton' },
+        { text: 'Button', link: '/docs/v1/api/button/button' },
+        { text: 'ButtonLink', link: '/docs/v1/api/button/buttonlink' },
         { text: 'Channel', link: '/docs/v1/api/channels/channel' },
+        { text: 'Text Channel', link: '/docs/v1/api/channels/text-channel' },
         { text: 'Client', link: '/docs/v1/api/client' },
+        { text: 'Emoji', link: '/docs/v1/api/emoji' },
         { text: 'Guild', link: '/docs/v1/api/guild' },
         { text: 'User', link: '/docs/v1/api/user' },
+      ]
+    },
+    {
+      text: 'API - Typedefs',
+      children: [
+        { text: 'ButtonStyle', link: '/docs/v1/api/button/buttonstyle' }
+      ]
+    },
+    {
+      text: 'Framework',
+      children: [
+        { text: 'Events', link: '/docs/v1/framework/entities/events' },
       ]
     },
   ]
