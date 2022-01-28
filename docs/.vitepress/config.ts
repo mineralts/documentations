@@ -36,11 +36,12 @@ function getGuideSidebar() {
       text: 'API - Classes',
       children: [
         { text: 'Activity', link: '/docs/v1/api/activity/activity' },
+        { text: 'Application', link: '/docs/v1/api/application' },
         { text: 'BaseButton', link: '/docs/v1/api/button/basebutton' },
         { text: 'Button', link: '/docs/v1/api/button/button' },
         { text: 'ButtonLink', link: '/docs/v1/api/button/buttonlink' },
         { text: 'Channel', link: '/docs/v1/api/channels/channel' },
-        { text: 'Text Channel', link: '/docs/v1/api/channels/text-channel' },
+        { text: 'TextChannelResolvable', link: '/docs/v1/api/channels/text-channel-resolvable' },
         { text: 'Client', link: '/docs/v1/api/client' },
         { text: 'Emoji', link: '/docs/v1/api/emoji' },
         { text: 'Guild', link: '/docs/v1/api/guild' },
