@@ -320,7 +320,7 @@ Define the afk channel of the guild.
 
 **Returns :** `Promise<void>`
 
-**Exemple**
+**Example**
 ```ts
 await guild.setAfkChannel('925390276091056200')
 // or

@@ -19,7 +19,7 @@ Max user allowed to this channel.
 ### .region
 The RTC region for this voice-based channel. This region is automatically selected if null.
 
-**Type: RTC_Region**
+**Type: [RTC_Region](/docs/v1/api/rtc-region)**
 
 ### .rateLimitPerUser
 The rate limit per user in this channel.

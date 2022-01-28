@@ -45,6 +45,7 @@ function getGuideSidebar() {
         { text: 'StageChannel', link: '/docs/v1/api/channels/stagechannel' },
         { text: 'StoreChannel', link: '/docs/v1/api/channels/storechannel' },
         { text: 'TextChannelResolvable', link: '/docs/v1/api/channels/text-channel-resolvable' },
+        { text: 'VoiceChannel', link: '/docs/v1/api/channels/voicechannel' },
         { text: 'Client', link: '/docs/v1/api/client' },
         { text: 'Emoji', link: '/docs/v1/api/emoji' },
         { text: 'Guild', link: '/docs/v1/api/guild' },
