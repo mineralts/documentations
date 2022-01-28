@@ -41,6 +41,8 @@ function getGuideSidebar() {
         { text: 'Button', link: '/docs/v1/api/button/button' },
         { text: 'ButtonLink', link: '/docs/v1/api/button/buttonlink' },
         { text: 'Channel', link: '/docs/v1/api/channels/channel' },
+        { text: 'DMChannel', link: '/docs/v1/api/channels/dmchannel' },
+        { text: 'StageChannel', link: '/docs/v1/api/channels/stagechannel' },
         { text: 'TextChannelResolvable', link: '/docs/v1/api/channels/text-channel-resolvable' },
         { text: 'Client', link: '/docs/v1/api/client' },
         { text: 'Emoji', link: '/docs/v1/api/emoji' },
