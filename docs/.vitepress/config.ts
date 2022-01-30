@@ -47,6 +47,8 @@ function getGuideSidebar() {
         { text: 'TextChannelResolvable', link: '/docs/v1/api/channels/text-channel-resolvable' },
         { text: 'VoiceChannel', link: '/docs/v1/api/channels/voicechannel' },
         { text: 'Client', link: '/docs/v1/api/client' },
+        { text: 'MessageEmbed', link: '/docs/v1/api/embeds/messageembed' },
+        { text: 'EmbedRow', link: '/docs/v1/api/embeds/embedrow' },
         { text: 'Emoji', link: '/docs/v1/api/emoji' },
         { text: 'Guild', link: '/docs/v1/api/guild' },
         { text: 'User', link: '/docs/v1/api/user' },
@@ -55,7 +57,14 @@ function getGuideSidebar() {
     {
       text: 'API - Typedefs',
       children: [
-        { text: 'ButtonStyle', link: '/docs/v1/api/button/buttonstyle' }
+        { text: 'ButtonStyle', link: '/docs/v1/api/button/buttonstyle' },
+        { text: 'ComponentType', link: '/docs/v1/api/component-type' },
+        { text: 'EmbedAuthor', link: '/docs/v1/api/embeds/embedauthor' },
+        { text: 'EmbedFooter', link: '/docs/v1/api/embeds/embedfooter' },
+        { text: 'EmbedField', link: '/docs/v1/api/embeds/embedvideo' },
+        { text: 'EmbedImage', link: '/docs/v1/api/embeds/embedimage' },
+        { text: 'EmbedThumbnail', link: '/docs/v1/api/embeds/embedthumbnail' },
+        { text: 'EmbedVideo', link: '/docs/v1/api/embeds/embedvideo' }
       ]
     },
     {

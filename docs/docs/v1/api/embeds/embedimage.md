@@ -1,0 +1,8 @@
+# EmbedImage
+
+Represents the image of a MessageEmbed.
+
+| Parameter      | Type      | Description                              |
+|----------------|-----------|------------------------------------------|
+| icon_url       | `?string` | URL of the icon for this footer.         |
+| proxy_icon_url | `?string` | Proxied URL of the icon for this footer. |
