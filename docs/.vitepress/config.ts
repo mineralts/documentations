@@ -49,6 +49,7 @@ function getGuideSidebar() {
         { text: 'Client', link: '/docs/v1/api/client' },
         { text: 'MessageEmbed', link: '/docs/v1/api/embeds/messageembed' },
         { text: 'EmbedRow', link: '/docs/v1/api/embeds/embedrow' },
+        { text: 'Integration', link: '/docs/v1/api/integrations/integration' } ,
         { text: 'Emoji', link: '/docs/v1/api/emoji' },
         { text: 'Guild', link: '/docs/v1/api/guild' },
         { text: 'User', link: '/docs/v1/api/user' },
@@ -64,7 +65,9 @@ function getGuideSidebar() {
         { text: 'EmbedField', link: '/docs/v1/api/embeds/embedvideo' },
         { text: 'EmbedImage', link: '/docs/v1/api/embeds/embedimage' },
         { text: 'EmbedThumbnail', link: '/docs/v1/api/embeds/embedthumbnail' },
-        { text: 'EmbedVideo', link: '/docs/v1/api/embeds/embedvideo' }
+        { text: 'EmbedVideo', link: '/docs/v1/api/embeds/embedvideo' },
+        { text: 'IntegrationAccount', link: '/docs/v1/api/integrations/integrationaccount' },
+        { text: 'IntegrationApplication', link: '/docs/v1/api/integrations/integrationapplication' }
       ]
     },
     {
